@@ -3,7 +3,7 @@
 define({
 
 	help: '<pre>                                                                \n' +
-		'Cryptalk, encrypted instant chat.                                      \n' +
+		'Vauban Secure Chat, encrypted instant chat.                              \n' +
 		'                                                                       \n' +
 		'----------------------------------------------------------------------	\n' +
 		'                                                                       \n' +
@@ -30,9 +30,9 @@ define({
 		'	/disconnect				Disconnect from host    			        \n' +
 		'                                                                       \n' +
 		'You can select any of the five last commands/messages with up/down key.\n' +
-		'                                                                       \n' + 
-		'Due to security reasons, /key command is not saved, and command        \n' + 
-		'history is  automatically cleared after one minute of inactivity.      \n' + 
+		'                                                                       \n' +
+		'Due to security reasons, /key command is not saved, and command        \n' +
+		'history is  automatically cleared after one minute of inactivity.      \n' +
 		'                                                                       \n' +
 		'<strong>It is highly recommended to use incognito mode while chatting, \n' +
 		'to prevent browsers from keeping history or cache.</strong>            \n' +
@@ -42,7 +42,7 @@ define({
 
 	default_nick: 'Anonymous',
 
-	// All post templates will have access to the properties in the 'settings' module, 
+	// All post templates will have access to the properties in the 'settings' module,
 	// along with the current nick, room, mute-status and of course the message ('text').
 	post: {
 		motd: 		'<li id="{id}"><i class="motd">{text}</i></li>',
@@ -52,7 +52,7 @@ define({
 		message: 	'<li id="{id}"><i class="timestamp">[{timestamp}] </i>MSG&gt; <i class="nick">{nick}&gt;</i> <i class="message">{text}</i></li>'
 	},
 
-	// All message templates will have access to the properties in the 'settings' module, 
+	// All message templates will have access to the properties in the 'settings' module,
 	// along with the current nick, room and mute-status.
 	messages: {
 		key_to_short: 			'Hmm, that\'s a weak key, try again...',
@@ -110,6 +110,6 @@ define({
 	},
 
 	client: {
-		title: 					'Cryptalk - Offline'
+		title: 					'Vauban Secure Chat - Offline'
 	}
 });
